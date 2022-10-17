@@ -1,0 +1,29 @@
+//Part 1.1 Reference assignments
+
+class Class{
+        String Example = " ";
+        }
+public class Main {
+
+
+
+    public static void main(String args[]) {
+
+        Class myExample = new Class();
+        Class Example_2 = myExample;
+        println(myExample.Example);
+        println(Example_2.Example);
+        myExample.Example = "Test 1";
+        println(myExample.Example);
+        println(Example_2.Example);
+        Example_2.Example = "Test 2";
+        println(myExample.Example);
+        println(Example_2.Example);
+    }
+
+    //better System.out.println
+    public static void println(String s) {
+        System.out.println(s);
+    }
+
+}

@@ -8,22 +8,36 @@ public class Main {
 
 
     public static void main(String args[]) {
-
+//Create an object of the class
+        //Assign 2 variables
         Class myExample = new Class();
         Class Example_2 = myExample;
+        //print the starting values
         println(myExample.Example);
         println(Example_2.Example);
+        //Change the value in the variable 1
         myExample.Example = "Test 1";
+        //print results
         println(myExample.Example);
         println(Example_2.Example);
+        //Change the value in the variable 2
         Example_2.Example = "Test 2";
+        //print results
         println(myExample.Example);
         println(Example_2.Example);
+
+        //Part 1.2 Reference method arguments.
+        printClassln(myExample, "Test 3");
+        println(myExample.Example);
     }
 
     //better System.out.println
     public static void println(String s) {
         System.out.println(s);
+    }
+
+    public static void printClassln(Class s, String s2) {
+        s.Example = s2;
     }
 
 }
